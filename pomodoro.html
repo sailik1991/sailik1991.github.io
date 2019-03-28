@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="Sailik Sengupta's website">
+<meta name="keywords" content="Sailik, sailiks, sailik1991, ssengu15, sailik sengupta, asu, phd, amazon, payments, git, kungfu, kung_fu">
+<meta name="author" content="Sailik Sengupta">
+
+<title>Sailik & Pomodoro</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="https://file.myfontastic.com/A4CHBfh6dbosfee7uZiogJ/icons.css" rel="stylesheet">
+
+<style type="text/css">
+
+.imageFull {
+  background: url(./images/peace.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+@font-face {
+    font-family:"SketchRockwell-Bold";
+    src: url("fonts/SketchRockwell-Bold.ttf");
+}
+
+#clockdiv{
+    font-family: 'SketchRockwell-Bold', serif; 
+    color: #000;
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+}
+
+</style>
+
+<script>
+  function addMinutes(date, minutes) {
+    return new Date(date.getTime() + minutes*60000);
+  }
+  
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor( (t/1000) % 60 );
+    var minutes = Math.floor( (t/1000/60) % 60 );
+    var hours = Math.floor( (t/(1000*60*60)) % 24 );
+    var days = Math.floor( t/(1000*60*60*24) );
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  
+  function initializeClock(id, endtime, isBreak){
+    var clock = document.getElementById(id);
+    var timeinterval = setInterval(function(){
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+      var t = getTimeRemaining(endtime);
+      minutesSpan.innerHTML = t.minutes;
+      secondsSpan.innerHTML = t.seconds;
+      if(t.total<=0){
+        $('button').prop('disabled', false);
+        clearInterval(timeinterval);
+        document.getElementById("bell").play();
+        if(isBreak == false) {
+          start(5.2, true);
+        } else {
+          alert("You just completed a Pomodoro!");
+        }
+      }
+    }, 1000);
+  }
+  
+  function start(mins, isBreak) {
+    $('button').prop('disabled', true);
+    initializeClock('clockdiv', addMinutes(new Date(), mins), isBreak);
+  }
+
+</script>
+
+</head>
+
+<body class="imageFull">
+  <div class="wrapper content col-md-7 col-centered">
+    <div class="panel-body">
+      <h2><a id="What_and_Why_0"></a>What and Why?</h2>
+      <p>It is really hard to be productive when our minds wander in the past or think of the future while living in the present.  Often, simple techniques can help us get past it.  One such technique is the <a href="http://caps.ucsd.edu/Downloads/tx_forms/koch/pomodoro_handouts/ThePomodoroTechnique_v1-3.pdf">Pomodoro technique</a>.  I was impressed after reading the article on <a href="https://medium.com/swlh/how-to-work-40-hours-in-16-7-d9038681e652#.4emqs0wwr">Medium</a>.</p>
+      <p>It’s Simple:</p>
+      <ul>
+      <li>Choose a task.</li>
+      <li>Set a timer for 25 minutes.</li>
+      <li>Work on your task until the timer rings, then put a checkmark on a tracker.</li>
+      <li>Take a five minute break.</li>
+      <li>Repeat steps 1–4 three more times, followed by a 15 minute break.</li>
+      </ul>
+      <p>This webpage rings an alarm after steps 2 and 4.</p>
+      <p><b><u>Rules</u> :</b> 25 minutes of steady, focused work on ONE task. No multitasking. No emails. No phone calls. No checking Facebook. Nothing! No distractions allowed!</p>
+      <br/>
+      <center style="color:#000;">
+      <u><b>Once you are ready, hit the start button!</b></u>
+      <div>Press 'Ctrl+R' to reset timer.</div>
+      </center>
+      <br/>
+      <center>
+      <button type="button" class="btn btn-primary btn-lg" onClick="start(25.2, false)">Start</button>
+      <br/>
+      <br/>
+      <div id="clockdiv"><span class="minutes">0</span> : <span class="seconds">0</div>
+      </center>
+            
+      <audio id="bell" style="display:none;">
+        <source src="audio/bell.mp3" type="audio/mp3">
+      </audio> 
+    </div>
+  </div>
+<body>
+
+</html>
