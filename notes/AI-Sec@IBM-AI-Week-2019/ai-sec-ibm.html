@@ -2,7 +2,6 @@
 <html>
 <head><meta charset="utf-8"/>
 <title>Guy on the Learning Curve</title>
-
 </head>
 
 <xmp theme="simplex" style="display:none;">
@@ -27,10 +26,10 @@ https://forallsecure.com
 - Mayhem-- For All Secure
 - Offense
   - Bug finding is simply a search problem in the space of inputs. Two types
-  - Fuzzing-- randomly generate inputs and try it on an execution code. It is an evolutionary algorithm. Population of test cases. Fitness function encourages executing new code paths. Code coverage feedback encourages incremental improvements. Icamtuf, 2014
-  - Symbolic Execution-- Code --> logical formulas --> SMT solvers (example from code to sat formulas). Mayhem project found 13,875 bugs in Debian
-- Strategy -- What and when to patch? Who to attack?
+    - Fuzzing-- randomly generate inputs and try it on an execution code. It is an evolutionary algorithm. Population of test cases. Fitness function encourages executing new code paths. Code coverage feedback encourages incremental improvements. Icamtuf, 2014
+    - Symbolic Execution-- Code --> logical formulas --> SMT solvers. Mayhem project found 13,875 bugs in Debian. Mayhem used this method to find bugs. Example from code to sat formulas:
 <p><img src="code2formulas.jpg" width="60%"></p>
+- Strategy -- What and when to patch? Who to attack?
   - Strategy is trailored to a reward system.
   - Offensive Strategy (Attack all the time)-- High negative reward for being attacked.
   - Defensive Strategy -- Patch if you detect that someone exploited you. Early patching impacts performance.
@@ -38,14 +37,14 @@ https://forallsecure.com
   - Used bayesian estimates-- estimate $p(exploit|patched)$, prior is $p(exploit)$, visible info is $p(patched)$.
 - Improving Security
   - AI against AI -- Human's can't keep up with the amount of code being produced.
-  - Automating computer security is the only way (preaching to the choir)
-  - Software Component Analysis like dependabot
-  - Static analysis -- LGTM.com (Scans source code; uses CVE info to develop attacks against this code)
+  - Automating computer security is the only way (preaching to the choir.)
+  - Software Component Analysis like `dependabot`
+  - Static analysis -- LGTM.com (Scans source code; uses CVE info to develop attacks against this code.)
   - Continuous fuzzing
-  - 70% are memory safety issues (MSI)
-  - Google's Fuzzing bot's discovered vulnerabilities are MSIs. A lot of code bases are in C!
-  - Wack-a-mode or MTD (address space randomization) makes it harder for an attacker to exploit this. 
-  - Microsoft might use Rust
+  - 70% of bugs are because of memory safety issues (MSI)
+  - Google's Fuzzing bot discovered most vulnerabilities are MSIs because a lot of code bases are in C!
+  - Wack-a-mole or MTD (address space randomization) makes it harder for an attacker to exploit vulnerabilities that arise from MSIs. 
+  - Microsoft is experimenting with Rust
   - Add mitigations to C
   - Preparing your app to work with pointer authentication
   - Don't use C/C++ if you don't have to. We would be much safer!
@@ -53,21 +52,23 @@ https://forallsecure.com
   - Malware leverages crappy devices to acquire power and money
   - How to empower consumers to make secure decision
   - Cyber -til- (https://cyber-itl.org/)
-- Q/A:
-  - Infer patching strategy of other teams.
-  - [Rajeev Agarwal, Una May O'Riely] Reconfiguration or structuring network given existing traffic data so as to (1) get better data in the future and (2) come up with better defense strategy.
-  - Are we only detecting (or good at detecting) memory attacks? Are their other attacks which we are not aware of?
+
+> Understand the use of the priors and its use-- Mainly used to infer patching strategy of other teams and also, realize whether exploiting them will yeild benifits.
+
+> [Rajeev Agarwal, Una-May O'Reilly] Reconfiguration or structuring network given existing traffic data so as to (1) get better data in the future and (2) come up with better defense strategy.
+
+> Are we only detecting (or good at detecting) memory attacks? Are their other attacks which we are not aware of?
 
 ### Research challenges for Security of ML Systems-- Tudor Dumitras, UMD
 http://www.umiacs.umd.edu/~tdumitra/
 
-- West world + Mr Robot (collab with Geong)
+- West world + Mr Robot (collab with Geong @ IBM Research)
 - What could go wrong?
 - Historical Analogy
   - Malware Detection -- Static analysis, behavioral features, automatic signature generation, delivery, reputation
-  - No algorithm can detect all possible viruses [Cohen, 1987]
+  - No algorithm can detect all possible viruses (see [Cohen, 1987](https://www.sciencedirect.com/science/article/pii/0167404887901222))
   - No robust features (on going debate for computer vision)
-  - Anti malware programs disagree and evolve-- imperfect oracles (ground truth is noisy)
+  - Anti-malware programs disagree and evolve-- imperfect oracles (ground truth is noisy)
   - There is no clean data-sets
 - What can the lessons in cyber-sec teach us about AI
   - Explained what is adv perturbation (eg. panda + adv noise is predicted as gibbon)
@@ -96,9 +97,10 @@ http://www.umiacs.umd.edu/~tdumitra/
   - Has not yet been able use MTD for DNNs (send him [our MTDeep paper](https://arxiv.org/abs/1705.07213)-- he noted my name)
   - Trojan introduces confusion in the internal layers.
   - Fuzzing to use implementation bugs
-- Q/A
-  - Transferabiliity -- Doesn't know yet. Said he would be happy to chat.
-  - Integrity in the context of neural network. 
+
+> [Me] How can one ensure transferabiliity of the various configurations that might be involved in an MTD setup of DNNs? Said he doesn't know that yet but would be happy to chat.
+
+> [Una-May O'Reilly] Integrity in the context of neural networks.
 
 ### Venkat Venkatakrishnan
 - Detecting Advance Provenance Threat (APTs)
@@ -141,7 +143,7 @@ $$ min\_{\theta} ~\mathbb{E}\_{x,y \in D} ~[max\_{\delta \in \Delta} l(\theta; x
   - Why are adversarial perturbation bad? -- Dog + meaningless perturbation becoming cat vexes us because it is a human perspective.
   - Model has no notion of what an image is. Also, it has no idea of what a 'dog' is. Loss functions don't incentivize it to understand it.
   - Is the perturbation actually meaningless for the neural network.
-  - Obtain adversarial example, Make a training set where adversarial example (dog + adv perturbation) is labelled as the incorrect class. Train a DNN and test on original set. Gets non-trivial (78%) accuracy. Realize that a human, who has not seen a dog/car before, would have obtained 0% on the test set.
+  - Obtain adversarial examples. Make a training set where adversarial example (X = dog + adv perturbation) is labelled as the incorrect class (Y = cat). Train a DNN and test on original set. Gets non-trivial (78%) accuracy. Realize that a human, who has not seen a dog/car before, would have obtained 0% on the test set.
   - Model has not incentive to use Robust features (humans understand). It can simply use non-robust features (humans don't) as long as they are correlated to the accuracy.
   - Only using non-robust features gets you an accuracy of 78% Using both gets you more accuracy.
   - Adversarial examples are a human phenomenon
@@ -161,6 +163,10 @@ $$ min\_{\theta} ~\mathbb{E}\_{x,y \in D} ~[max\_{\delta \in \Delta} l(\theta; x
   - Direct feature manipulation (add a particular robust feature, say strips to the generated image of a horse)
   - Why did a particular mis-classification happen? Image showing ants are arranged in a way that shows there is a dog in the top left corner:
 <p><img src="madry_explains_nn_prediction.jpg" width="60%"></p>
+
+> How accurate is it to say that DNNs have beat human's on datasets (eg. ImageNET) when both are using differnt vocabularies for identifying objects?
+
+> Eg. a 99% accurate deep net misclassifies on addition of non-robust noise where as a human would not misclassify it. Thus, comparing two systems, one exploiting non-robust features to gain accuracy (DNNs) whereas the other only being able to use robust features (humans) seems like an apple to orange comparison.
 
 ### A Marauder's map of Security and Privacy in ML -- Nicolas Papernot
 https://arxiv.org/pdf/1811.01134.pdf
@@ -197,7 +203,7 @@ They introduced [PATE : Private Aggregation of Teacher Ensembles]() with psychol
 - How to build a robust classifier.
 - Normal classification objective
 
-$$ min\_\theta ~E\_{(x,y) \in D}~ l(\theta; x+\delta, y) $$
+$$ min\_\theta ~E\_{(x,y) \in D}~ l(\theta; x, y) $$
 
 - Robustness optimization objective
 
@@ -216,6 +222,10 @@ $$ min\_\theta ~E\_{(x,y) ~ D}~ [max\_{\delta \in \Delta} l(\theta; x+\delta, y)
 - Convex relaxation methods were too particular about activations (relu) and neural network architectures. Randomized smoothing can use any classifier f, even if it is not a DNN. He believes there has to be a middle ground.
 - Wasserstein distance captures more semantics of the image to create attack perturbations. Note that they might not still be able to make the final image look different. (Given that these adversarial pertubations looks so aligned with objects in the image, can one use this for image segmentation?)
 <p><img src="adv_wasserstein.jpg" width="60%"></p>
+
+> For images, defining adversarial noise based on the number of pixels that need to be altered and the magnitude of alteration can be used to define a formal notion of attacks that is necessary to guarantee provable security against them. How can one define such well defined attack-models or threat-models for problems in NLP, malware-detection etc.
+
+> Zico said that one needs to define a meaningful way of what a pertubation that is harmful mean in such domains. For example, replacing a word with its synonym in a sentence cannot possibly be a harmful perturbation, whereas, replacing with an antonym might be. Thinking along these lines might help.
 
 </xmp>
 
