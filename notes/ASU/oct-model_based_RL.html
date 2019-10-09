@@ -21,7 +21,7 @@ Reinforcement Learning has been successful in atari games, go etc. But these app
 
 Evidence form neuroscience that humans use both model-free and model-based algorithms [Daw et. al 2010].
 
-In model based, collect data of ${s,a}$ and learn the dynamics of $s_{t+1} = f(s_t, a_t)$. Once learnt, plan to find a policy. With the policy $\pi(\theta^*)$, implement it in the real world and collect the ${s,a,r}$. Use this data to improve the model. THree main design choices:
+In model based, collect data of ${s,a}$ and learn the dynamics of $s_{t+1} = f(s_t, a_t)$. Once learnt, find a policy given the reward function for a specific task. With the policy $\pi(\theta^*)$, implement it in the real world and collect the ${s,a,r}$. Use ${s,a}$ from this data to improve the dynamics model. In this setting, three main design choices:
 
 - What sort of model do we want to use to predict our dynamics? Dynamic Model-- Forward dynamics (allow proper uncertainity propogation). Gaussian Process, Neural Netss, etc.)
 - How to compute long therem predictions?-- Usually, recursive propogation in the state-action space, error compounds multiplicatively, how do we propogate uncertainty?
@@ -30,7 +30,7 @@ In model based, collect data of ${s,a}$ and learn the dynamics of $s_{t+1} = f(s
 
 <p><img src="excitation_trajectories.jpg" width="60%"></p>
 
-Collect excitation trajectories and use it to identify dynamics. Not closed loop, i.e. after planning the data gathered in the environment is not used to reupdate the dynamics. (Can this be used in )
+Collect excitation trajectories and use it to identify dynamics. Not closed loop, i.e. after planning the data gathered in the environment is not used to update the dynamics. (Can this be used in cyber-security settings? Model of known attacks and network dynamics are well defined up-front.)
   
   - PILCO [Deisenroth et. al. 2011](https://www.ias.informatik.tu-darmstadt.de/uploads/Publications/Deisenroth_ICML_2011.pdf) - Dynamics Model-- Gaussian Model; Propogation-- Moment Matching; Planning-- RBF network optimized offline
   - [What he said, yet to understand] Gaussian along the first moment of the original distribution. Everytime gausianize for moment matching. Closed from policy and policy optimized over all distributions over state and actions
@@ -50,6 +50,12 @@ Objective Mismatich in Model based RL
 
 - Adversarially Generated DYnamics-- adversarial attack one part of the model to throw off the learner. (can this be used for generalization?)
 - Not sure how to prevent bad model behavior (resulting in low reward) when dynamics are adv attacks. They tried to weight trajectories with $\epsilon$-optimal from the optimal trajectory (unfortunately, the optimal trajectory is often unknonwn in the real world).
+
+### Offline discussions (After discussions with Rao)
+
+Basically, if you have a setup in which there is a phrase of learning the domain dynamics and then a planning component to come up with a policy to solve a particular task, you can choose hom much time to spend in learning the domain dynamics and how much to imporve on a specific task. If you spend more time learning the domain, you will be able to solve a larger number of tasks but your performance on a particular task might not be great. On the other hand if you spend a little time to learn the domain dynamics but spend a lot of time in improving on the task (i.e. use the $r$ in ${s,a,r}$ obtained by performing in the environment), you will be great at a particular task but might not be able to perform well in a multitude of tasks.
+
+You can also view this from a robust control perspective. Instead of learning a single model of the domain dynamics, you maintain a (prior) distribution over possible models of the domain. Upon obtaining ${s,a,r}$ traces by acting in the real world, you can update the posterior distribution over the various domain models.
 
 </xmp>
 
