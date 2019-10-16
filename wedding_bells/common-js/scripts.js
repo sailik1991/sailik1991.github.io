@@ -60,7 +60,7 @@ function countdownTime(){
 	}
 
 	if(isExists('#clock_reception')){
-		$('#clock_reception').countdown('2019/12/12', function(event){
+		$('#clock_reception').countdown('2019/12/13', function(event){
 			var $this = $(this).html(event.strftime(''
 				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
 				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
