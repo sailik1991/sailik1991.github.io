@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<title>Guy on the Learning Curve</title>
+</head>
+
+<xmp theme="simplex" style="display:none;">
+
+# International Conference on Learning Representation, 2020
+
+## 26th April, 2020
+
+### [Robust Local Features for Improving the Generalization of Adversarial Training](https://arxiv.org/pdf/1909.10147.pdf)
+
+Normal trained models are more biased towards local features. More generalized by less robust to adversarial perturbations. On the other hand adversarially trained models are more robust to adversarial attacks but not good for generalization to the test set. To get the best of both worlds, they consider a robust local feature step in the training process. In this, they consider horizontal and vertical shuffle operations of the adversarilly trained examples when training the network. This helps them capture local features thus helping generalization and, at the same time, be robust to adversarial attacks.
+
+### [Fast is better than free: Revisiting adversarial training](https://arxiv.org/abs/2001.03994)
+
+FGM is cheaper to find because it takes a single gradient step while PGD attacks are costlier as they take multiple gradient steps. PGD is stronger and thus a adversarially trained (AT) network trained on FGM perturbed images is vulnerable to PGD attacks; also, the obvious is not true. The paper finds a way to tweak the FGM method that can make the FGM based AT as effective as the PGD based adversarial training AT.
+
+In particular, the first discover why the FGM-AT only make a network robust to boundary point in the perturbation ball. To fix this they initialize the attack with a random perturbation point in the norm ball of the perturbation region. This helps them get an effective AT that takes much less time.
+
+### [Defending Against Physically Realizable Attacks on Image Classification](https://openreview.net/pdf?id=H1xscnEKDr)
+- Eugene Vorobeychik
+
+To defend against real-world physical attacks (glasses, stickers, etc), they come up with a new attack model called rectangular occlusion attack. In this attack, a given rectangle can (1) be placed anywhere in the image (exhaustive search using grey rectangle) and (2) can be perturbed with arbitrary noise (PGD within the rectangle that maximizes loss). Works well against physical work attacks-- (1) Specs on facial images and (2) stickers on traffic signal signboard.
+
+### [Breaking Certified Defenses: Semantic Adv Examples with Spoofed Robustness Certificates](https://openreview.net/pdf?id=HJxdTxHYvB)
+- Tom Goldstein
+
+Generate (Shadow) attacks that have certificate radius for which they will always be adversarial. To generate this attack, they only consider lightening or darkening of pixels (loss function punishes any change is color). This paper basically shows that methods that guarantee certification can have large perturbation attacks for which the certificate remains valid. Then certification has no implications about the robustness or accuracy of a network.
+
+### [Learning Expensive Coordination: An Event-Based Deep RL Approach](https://openreview.net/pdf?id=ryeG924twB)
+- Bo An
+
+Single Leader multiple follower with deep (complicated LSTM-based network) policy gradient. Read the paper on "A MARL Algo based on Stackelberg Game" (Leader, Follower and Sub-follower)
+
+### [Posterior sampling for multi-agent reinforcement learning: solving extensive games with imperfect information](https://openreview.net/pdf?id=Syg-ET4FPS)
+
+CFR -- Extensive games with imperfect information
+LH algorithm -- For normal form games
+UCB, Thompson sampling for the RL part
+
+Fictitious play, MC-CRF with outcome sampling, Actor-critic, etc.-- Neither can provably converge to the Nash Eq.
+
+The consider two player zero sum games. Parameters (transitions and rewards are sampled from a prior distribution) They propose an algorithm that leverages Posterior sampling in RL PSRL and counter factual regret minimization.
+
+PSRL draw a sample from the posterior distribution and find optimal policy on this sampled set of parameters; use policy for further interaction. It is hard to extend to multi-agent setting (why?). CFR is the state of the art for extensive games when T and R is known. Self play algorithm that generates strategy by minimizing each players regret. In two player general sum game, exploitability (distance to NE) of the policy is less that the sum of the rewards for each agent divided by the number of rounds played.
+
+CFR-PSRL. Samples parameters, use CFR to find the best policy over the sampled parameters (this is termed as minimizing the fake regret). True regret is defined as the regret of the policy learned on the correct parameters (parameters are distribution, so what is the alone parameter 'd-star'?). How to minimize the difference between the true and the fake regret?
+
+Draw another sample form the posterior distribution and learn the policy that maximizes the different in the utility in the two sampled parameters. Then, use this policy for player i and the original CRF policy learned in the last paragraph for other players.
+
+Theoretical result: exploitability is of the order O(\sqrt(T \log T))
+
+### [Real or Not Real, that is the Question](https://openreview.net/pdf?id=B1lPaCNtPB)
+
+Takes a distributional view and seeks to ensure that the KL divergence between a true real and fake classifier is less from the discriminators real and fake classification. They show that by considering a particular distribution for the discriminator's output, their Realness GAN has the same objective as the standard GAN. The discriminator is called the realness discriminator. They provide conditions for coming up with an optimal realness discriminator (given a fixed generator, D satisfies this condition). Then they show that against an optimal realness generator, there exists one G that achieves highest value (maximizes the discriminator loss in the max min setup) if and only if the true distribution is equal to the generator's distribution. 
+
+This change makes a GAN generate more real-looking images. Also, it can be used with little modification to the Conditional GAN case.
+
+[Language GANs Falling Short](https://openreview.net/pdf?id=BJgza6VtPB)
+
+GANs used to generate language-- line of work such as SeqGAN, TextGAN, LeakyGAN, MaskGAN, ScratchGAN, FM-GAN-- are all bad and should not be used in practice. While image generation has been helped by GANs, text generation hasn't been able to piggyback on this success (yet).
+
+SeqGAN = GAN + REINFORCE + MC Rollouts
+
+On Quality vs Diversity metric, there is no clear winner. Eg. Leaky GAN out performs RankGAN, SeqGAN on diversity but has worse quality.
+
+Temperature tuning to modulate the quality diversity trade-off. Change the entropy of your output distribution with a temperature parameter. MLE outperforms all the GANs in quality diversity space. They took all of the improvements used in the series of GAN papers and showed that the resultant GAN, termed as RL-GAN is still outperformed by MLE!
+
+[Adversarial Training and Provable Defenses: Bridging the Gap](http://www.openreview.net/pdf?id=SJxSDxrKDr)
+
+Uses insights from the adversarial training (which has mostly been empirical studies) and convex (attack) set propogation methods (that can give guarantees) to come up with a defense.
+
+If an examples is outside the class output boundary of a layer's output but within the convex relaxation, they call this a latent adversarial example. If one can find LAE, one can use them for adversarial training and get provably robust networks. First, do PGD based AT. Then they search (layerwise) for LAEs-- take a mini-batch form the training set, compute the convex region for each example, start with a point in the convex region, use PGD to maximize loss-- then do adversarial training by only changing weights of that layer (fast). Their methods yield accuracy and highest certified robustness values (for 2/255 on CIFAR-10). Is a little worse than to Zhang et. al., 2020 for 8/255.
+
+Used Zenotope initialization-- Didn't really understand this part.
+
+</xmp>
+
+<!-- [Towards neural networks that provably know when they don't know](http://www.openreview.net/pdf?id=ByxGkySKwH) -->
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']], displayMath: [['$$', '$$']], processEscapes: true } });</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML&amp;locale=fr"></script>
+<script src="https://strapdownjs.com/v/0.2/strapdown.js"></script>
+
+</html>
