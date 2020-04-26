@@ -8,6 +8,87 @@
 
 # International Conference on Learning Representation, 2020
 
+## [(Workshop) Towards Trustworthy ML: Rethinking Security and Privacy for ML](https://trustworthyiclr20.github.io/)
+- Nicolas Papernot
+
+Move discussions of robustness beyond LP norm based attacks; Stateful robustness; ML techniques that are tailored for privacy as opposed to just bringing ideas from privacy into ML; Incentives for ML fairness and ethical considerations
+
+#### Best Papers:
++ Privacy preserving collaborative ML on genomic data using tensorflow
++ Improved Wasserstein Attacks and Defenses
+
+### On the Susceptibility to Adversarial Examples under Real-world Constraints -- Invited talk by CyLab
+
+Fooling Face Recognition-- for surveillance/access control. [Sharif, BHagavatula, Bauer, Reiter CCS'16, arXiv'17, TOPS'19].
+
+- Threat Model: The attacker does not have access to change the digital input but can change based on make up, camera position, lighting conditions.
+- Start with Szegedy's attack
+- Restrict the attack to only eye-glasses
+- Smooth pixel transitions -- captured as sum of differences of neighboring pixels, eye glasses are more smoother and look more realistic.
+- Restrict to printable colors. This helps one to use the glass. Use non-print-ability score as part of the objective.
+- Perturbation has to be robust to pose. Use a set of input images of a person as opposed to only one input image that is attacked.
+- People who can wear this glasses to impersonate celebrities as per an image classification method.
+
+### [Games for Fairness and Interpretability (NeurIPS, 2018 paper)](http://web.media.mit.edu/~echu/assets/projects/games-fairness/Games_for_Interpretability_and_Fairness.pdf)
+
+Instance level explanations-- Saliency Maps (SUndararajan, 2017), Generating Natural Language explanations (Hendricks, 2016), Counterfactual explanation (Wacher 2017), Prototypical examples (Chen, 2019), Distillation into interpretable models (Ribeiro, 2016; Froost, 2017; Zhang, 2019), disentangling factors (Kulkarni, 2015; Higgins, 2016)
+
+Certification about fairness of a model or debugging a model (Poursabzi-Sangdeh, 2019; Zhang, 2020; Bhatt, 2020)-- might not be helpful for downstream tasks using these models.
+
+Participatory ML-- Involve humans more. Human-in-the-loop design (Katell, 2020) and training process (Lage, 2018). Documentation and auditing (Mitchell, 2019; Ali+Sapiezynski, 2019-- Facebook Ads). Platforms for sharing and auditing eg. (Vanschoren, 2014) Open ML: People can share their models and dataset), (Epstein, 2018) Upload certain models and have social scientist study their behavior.
+
+They seek to address 'How to best align incentives between ML developers and consumers?'. For this purpose, the use Games with a Purpose(?) framework for fairness and interpretability.
+
+Games with a purpose (GWAPs). Solvable by human but beyond the capabilities of machines. ESP game (Von Ahn, 2004)-- human player has to guess what words the 1st human will use to describe an image (there is a list of taboo words that the 1st human cannot use and this is told to the player). Macro task games (Khatib, 2011)-- Fold it-- solve the problem of protein folding. Human's ability and intuition with 3D space-- 
+At the time this was published, 60k people had played it and discovered multiple novel proteins.
+
+AI examples:
+- Quick Draw game -- draw an object < 20 secs. Image classifier tries to identify it (Google collected a huge amount of data.)
+- AI Dungeon game -- Powered by GPT2 -- you are in a scenario -- you do an action -- GPT2 continues the storyline
+
+Their game is
+- ML powered
+- Aligns incentive by (1) generating additional training data (for adv. training kind of a thing) and (2) is fun and engaging.
+
+Player 1 provides an input, player 2 competes against an AI to guess the correct answer. The describe a word embedding game. Player 1 provides hints, AI and player 2 guess the words (given sherlock and the requirement to guess 2 words, player 2 guesses _yard_ and _england_ and AI guesses _england_ and _watch_; Player 2 gets one point because one word was also guesses by AI). AI model could be based on word embedding, which have biases. Interesting to see what guesses it makes.
+
+<p><img src="ai-word-embedding-game.png" width="60%"></p>
+
+Break the bot game
+
+<p><img src="break-the-bot-game.png" width="60%"></p>
+
+Games can be used to generate meaningful adversarial perturbations, identify existing biases in AI system by leveraging a human in the loop process.
+
+### [Improved Wasserstein Attacks and Defenses](https://edwardjhu.com/assets/files/wass.pdf)
+- MS Research
+
+LP threat model is the most common attack. Real perturbation are different-- Wasserstein Distance Attacks (Wong et. al. 2019) is the latest set of attacks that can generate semantically meaningful perturbations. Perturbations generated are withing the Wasserstein ball around x using Projected Gradient Descent (PGD) -- PGD updates the input iteratively and then projects it back into the perturbation ball allowed by the threat model.
+
+How to handle projection into the Wasserstein ball? Projection is done to the intersection of the l-infinity (valid image range) and Wasserstein ball. Wong et. al. uses the steepest descent w.r.t the l-infinity norm and a small step size. First project to the Wasserstein ball and then cramp the projected image to satisfy the requirements of the l-infinity norm. Clamping may not be safe when projecting to W-ball first and then to l-inf space.
+
+<p><img src="wass-ball-first-lp-ball-next-unsafe.png" width="60%"></p>
+
+They incorporate an addition constraint (ensure that z, which is the image after taking the gradient step, has l-inf norm less than the radius of the l-inf ball 1/|z|_1) to project into the intersection directly and safely. This is still a convex problem and solved using the original Lagrangian multiplier approach in Wong et. al. 2019. Increasing step size and using steepest descent w.r.t. l2 norm produces strong attacks.
+
+<p><img src="modification_to_wasserstein_attack.png" width="60%"></p>
+
+Adversarial training helps to make classifier more robust.
+
+### [DADI: Dynamic Discovery of Fair Information with Adversarial Reinforcement Learning](https://arxiv.org/abs/1910.13983)
+
+Related works-- Group-level fairness (Make sure the that classification accuracy is similar for men and women) _vs ._ Individual-level fairness (if two individual data-points are close in the feature space, they should have similar outcomes). Latter is harder to enforce in practice.
+
+They focus on demographic parity (subclass of group-level fairness). Minimized demographic disparity. What information can you share with a decision maker that is indifferent or adversarial. Remove only sensitive feature but unfortunately other features are correlated (eg. zip-code and race) [Dowrk et. al. 2012].
+
+Hence, find a subset of features that maximizes accuracy (obj) while ensuring that demographic disparity is bounded (constraint) [Grgic-Hlaca et. al. 2018]. Problem is you have to choose the same subset of feature fall all individuals.
+
+Learn some latent representation of the data. Latent representation should benefit the accuracy of the classifier but limit the impact on fairness (uses 2 upstream models-- classifier and adversary) [Beutel et. al. 2017; Madras et. al. 2018]. Share the representation but not the raw features. Makes it hard if the downstream classifier is a human or one needs explanations.
+
+Trying to find a subset of features that maximizes accuracy and minimizes unfairness but does not need to select the same feature for each input. (Eg. decision about a particular patient is done in a iterative way. First measure their temp, based on that you may recommend a blood test, or admission to a hospital.) Start with an individual set of features and then have a policy to select the next feature. Stopping criterion to know that this set of features is enough to make a final decision. Problem formalized as a MDP-- Rewards are the weighted sum of classification accuracy and demographic parity [Shim et. al. 2018]. They do RL in this setting.
+
+## Main Conference Papers and Talks
+
 ### [Robust Local Features for Improving the Generalization of Adversarial Training](https://arxiv.org/pdf/1909.10147.pdf)
 
 Normal trained models are more biased towards local features. More generalized by less robust to adversarial perturbations. On the other hand adversarially trained models are more robust to adversarial attacks but not good for generalization to the test set. To get the best of both worlds, they consider a robust local feature step in the training process. In this, they consider horizontal and vertical shuffle operations of the adversarilly trained examples when training the network. This helps them capture local features thus helping generalization and, at the same time, be robust to adversarial attacks.
