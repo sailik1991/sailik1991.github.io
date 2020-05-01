@@ -89,6 +89,35 @@ Trying to find a subset of features that maximizes accuracy and minimizes unfair
 
 ## Main Conference Papers and Talks
 
+### [AI Systems that can See and Talk]
+- Devi Parikh
+
+Visual question answering problems are interesting in a variety of scenarios-- aid visually impaired individuals, navigate unstructured visual data, leverage multi-modal info, hateful content detection (that become hateful when one combines the vision and language data that are otherwise benign), augmented reality. From a technical standpoint, she believes it goes beyond bucketed recognition problems and consider grounding and reasoning in the context of vision problems.
+
+For answering questions related to a picture, the typical model architecture use is, at first, two parallel layers-- one that embeds the question and the other tha embeds the image. Then an attention layer alongside multi-modal fusion is used to create a final representation that used by a classifier to come up with an answer.
+
+The visual feature extraction step is mostly solved using a bottom-up top-down approach. Anderson et. al. 2018 moved away from using uniform-sized grid representation of images to irregular-sized object-based grid representation. This lets people leverage datasets that have object annotation (eg. Visual Genome). (VQA stuff Somak was working on.)
+
+Image captioning can become difficult at times. For eg. image of a dog sitting on a chair dressed up for its birthday is captioned as "A dog sitting on a couch with a toy". This is particularly unsatisfactory because vision models are great at detecting couches and hence, it should clearly have seen that there is no couch in the picture. Thus, one should be used to leverage existing object detectors. To address this, given an image, they first come up with a template (instpired from Timara's group 2011)
+
+```
+A __ with a __ is sitting at __ with __ 
+```
+
+Then use an object detector to fill in the blanks. Robust captioning is possible-- if you see images (eg. cat and remote control in the same image) in the test set that you have not seen them in the training set, you can still solve them. This is often a problem in real world dataset (karate seen in 5 training images, baseball in 10k images). At test time, this model captions a karate image as people playing baseball.
+
+Analysis of VQA-- what color are the cones? Model always says orange (because it has seen mostly orange cones in the training set). The re-designed the VQA dataset such that the test data is carefully aligned to test for the case--is a model overconfident about the correlation learned in the training set even without spending time understanding the scene?
+
+To answer the different question, some require color as an answer, some require numbers etc., there is an extra component to the neural network-- given the question, it identifies the appropriate answer space. It is then used in conjunction to the typical model to output the final answer.
+
+VQA can significantly from grounding. Model needs OCR because that is state of the art even for industries (vision works really well). Basically the typical model part uses an OCR module.
+
+VQA, Image Captioning, Visual Commonsense Reasoning, Refer Expression all of these tasks require you to collect a dataset then (come up with and) train a model that performs well. This is not a very satisfying process intellectually.
+
+VQA model says this plant type is banana while the captioning model says it is a branch with red flowers on it. So, they wanted with a common model for VQA and captions (ViLBERT, NeurIPS-2019). THis needs fine tuning for the underlying tasks. Multi-task VilBERT (CVPR 2020) can perform 12 tasks with a single model-- VQA, spatial reasoning tasks, pointing tasks (mark the boy and returns a bounding box), 20 question like chat and it identifies the object, tasks with two images (do both images have 3 people? No, does the image on the left have 3 people in them? Yes) (Given 4 images and a textual caption, which image does it point to) etc. Also, this model is SOTA for all the tasks.
+
+Challenges-- (1) Does not use diverse visual data (most models use COCO), (2) Incorporating external knowledge -- several efforts but she doesn't feel that people have an idea what is a good way to go about this; (3) Human-AI teams-- pre-train a speak and fix the language. The planner uses this to come up with conversation. (4) Evaluation in real-world settings is not up to the mark. Helping the visually impaired users. (5) Biases in the dataset. Identifying in the visual-language case is difficult.
+
 ### [Robust Local Features for Improving the Generalization of Adversarial Training](https://arxiv.org/pdf/1909.10147.pdf)
 
 Normal trained models are more biased towards local features. More generalized by less robust to adversarial perturbations. On the other hand adversarially trained models are more robust to adversarial attacks but not good for generalization to the test set. To get the best of both worlds, they consider a robust local feature step in the training process. In this, they consider horizontal and vertical shuffle operations of the adversarilly trained examples when training the network. This helps them capture local features thus helping generalization and, at the same time, be robust to adversarial attacks.
