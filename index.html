@@ -247,26 +247,37 @@ html { font-family: 'Inter', sans-serif; }
   </ul> -->
   <br>
 
-  <h2 id="experience">Experience</h2>
+  <h2 id="experience">
+    Experience
+    <small>
+      <button class="btn btn-sm btn-outline-light" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1">--verbose</button>
+    </small>
+  </h2>
   <hr>
   <ul>
     <li><p><strong>Scientist</strong>, <span class="fa fa-amazon body-icon" style="color:#ff9900;"></span>WS AI Labs (2020-Present)</p>
-      Working on challenges in goal-oriented chat-bots as part of the <a href="https://aws.amazon.com/lex/">AWS Lex</a> team.
+      <p class="collapse multi-collapse" id="collapse1">
+      Identifying failure modes of task-oriented dialogy systems and trying to ensure the automated chat agent doesn't force your to seek a human. Also, teaching <a href="https://aws.amazon.com/lex/">AWS Lex</a> to converse in multiple languages.
+      </p>
     </li>
     <br>
     <li><p><strong>Intern Scientist</strong>, <span class="fa fa-amazon body-icon"
                                                              style="color:#ff9900;"></span>mazon Science (Summer 2019)</p>
-      Worked on constrained text-generation.
+      <p class="collapse multi-collapse" id="collapse1">
+        Improved constrained text-generataion using Supervised and Reinforcement Learning before ChatGPT made it sexy.
+      </p>
     </li>
     <br>
     <li><p><strong>Intern Scientist</strong>, <span class="fa fa-amazon body-icon"
                                                              style="color:#ff9900;"></span>mazon Science (Summer 2018)</p>
-      Worked on training-data augmentation for improving few-shot performance of state-of-the-art (SOTA) text-classification models.
+      <p class="collapse multi-collapse" id="collapse1">
+        Develope effective training-data augmentation that improves few-shot performance of state-of-the-art (SOTA) text-classification models.
+      </p>
     </li>
     <br>
     <li><p><strong>Software Development Engineer</strong>, <span class="fa fa-amazon body-icon"
                                                                  style="color:#ff9900;"></span>mazon (2013-2015)</p>
-      <p>
+      <p class="collapse multi-collapse" id="collapse1">
         Backend (Java), Frontend (NodeJS) and everything in between. A disciple of the <a href="http://www.mit.edu/~xela/tao.html">Tao of Programming</a> and
         follower of <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code</a>ing practices. Was a software
         engineer by day and a security certifier by night, ensuring Amazon's code was difficult (only fools say impossible) to hack.
