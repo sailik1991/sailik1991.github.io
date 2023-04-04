@@ -30,6 +30,11 @@
 <link href="./bootstrap.min.css"
       rel="stylesheet">
 
+<!-- Latex Style Fonts -->
+<!--<link rel="stylesheet"-->
+<!--      type="text/css"-->
+<!--      href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">-->
+
 <script>
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
@@ -44,22 +49,74 @@ html { font-family: 'Inter', sans-serif; }
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous">
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<!-- Add Showdown (Markdown library) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-<div class="row justify-content-md-center mt-5 container-fluid" style='font-family:"Inter", sans-serif'>
-  <div class="col-md-2 col-sm-10 mt-3 mx-1">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top container-fluid"
+     style='font-family:"Inter var", sans-serif'>
+<!--     style='font-family:"Computer Modern Serif", sans-serif;'>-->
+  <a class="navbar-brand"
+     href="#">Sailik Sengupta, the guy on the learning curve</a>
+  <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse"
+       id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#research">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#teaching">Teaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#awards-and-services">Awards/Services</a>
+      </li>
+      <!--
+      <li class="nav-item">
+        <a class="nav-link"
+           href="#projects-and-other-stuff">Other</a>
+      </li>
+      -->
+    </ul>
+  </div>
+</nav>
+<div class="row justify-content-md-center mt-5 container-fluid"
+     style='font-family:"Inter", sans-serif'>
+<!--     style='font-family: "Computer Modern Serif", sans-serif;'>-->
+  <div class="col-md-2 col-sm-10  mt-3 mx-1">
     <center>
       <img src="./images/sailik_feluda_deepart.jpg"
            alt="sailik image"
-           style="width:175px; height:175px; border-radius: 50%; object-fit: cover; object-position: center; border: 2px solid #fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+           style="width:100%; height:100%; border-radius: 50%; object-fit: cover; object-position: center; border: 2px solid #fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
       <br>
       <br>
       <p>Style-transferring one of <a href="https://en.wikipedia.org/wiki/Feluda">Satyajit Ray's Feluda</a> book-covers onto his portrait taken at the <a href='https://en.wikipedia.org/wiki/Golden_Gate_Bridge'>Golden Gate Bridge</a>.</p>
@@ -103,57 +160,144 @@ html { font-family: 'Inter', sans-serif; }
           </span>
         </div>
       </div>
-    </center>
+        <!--
+        Removing Twitter widget because (1) It does not render if tracking protection is enabled on the browser and (2) renders improperly on mid-sized devices (precisely the widget goes beyond the right border of the card.)
+
+        <br>
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+        <a class="twitter-timeline" data-lang="en" data-height="500" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/sailiks?ref_src=twsrc%5Etfw">Tweets by sailiks</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    -->
+</center>
+</div>
+<div class="col-md-6 col-sm-10 mt-3 mx-4">
+  <h2 id="home">Home</h2>
+  <hr>
+  <p>Once upon a time, Sailik was born in the city of <a href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a>. Over the years, he has developed a taste for life-long learning, thinking, coding, reading, clicking pictures, eating lots of food and listening to a wide variety of music.</p>
+
+  <p>After completing his Ph.D. at Arizona State University with <a href="http://rakaposhi.eas.asu.edu/">Dr. Subbarao Kambhampati</a>, he joined Amazon AI's <a href='https://aws.amazon.com/lex/'>Lex team</a> as an Applied Research Scientist. He is interested in identifying failure points of cyber systems (eg. deep learning models, cloud systems, web-applications) and proposing solutions that can make these systems behave is a robust and reliable manner. In 2018, he was awarded the prestigious <a href="https://www.research.ibm.com/university/awards/fellowships-awardees.html">IBM Ph.D. Fellowship</a> for his work.</p>
+
+  <p>Feel free to reach out to him with queries relating to his work (or just say a 'hi'). You can download a copy of his <a href="./files/CV_sailiks.pdf">CV here</a>.</p>
+
+  <div class="collapse"
+       id="collapseExample">
+    <p>He likes to talk (a lot) and spends a lot of time doing so, oftentimes, on random topics completely unrelated to his research interests. He is self-critical about his shortcomings and feels correcting them will help him become a better person.</p>
+
+    <p>The pronunciation of his name in his native language, Bengali, is <code class="prettyprint lang- prettyprinted"
+                                                                               style=""><span class="typ">Sho</span><span class="pun">-</span><span class="pln">e</span><span class="pun">-</span><span class="pln">lik</span></code>.  It means the aesthetic quality of any work.</p>
+  </div>
+  <button class="btn btn-outline-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample">More or Less?</button>
+  <br>
+  <br>
+  <h2 id="education">Education</h2>
+  <hr>
+  <div class='row'>
+     <div class="col-sm">
+       <center>
+         <p><img src="./images/270px-Arizona_State_University_seal.png"
+              alt="sailik image"
+              style="width:100px;height:100px"
+              class="rounded-bottom">
+         </p>
+         <p>
+           <i>Ph.D. (2015-2020)</i>
+           <br>
+           Computer Science
+           <br>
+           Arizona State University
+         </p>
+       </center>
+    </div>
+    <div class="col-sm">
+       <center>
+         <p><img src="./images/1200px-Jadavpur_University_Logo.png"
+              alt="Jadavpur University logo"
+              style="width:100px;height:100px"
+              class="rounded-bottom">
+         </p>
+         <p>
+           <i>B.E. (2009-2013)</i>
+           <br>
+           Computer Science &amp; Engg
+           <br>
+           Jadavpur University
+         </p>
+       </center>
+   </div>
+   <div class="col-sm">
+      <center>
+        <p><img src="./images/sxcs-icon.png"
+            alt="St. Xavier's collegiate school logo"
+            style="height:100px"
+            class="rounded-bottom">
+        </p>
+        <p>
+          <i>Alumnus (1997-2009)</i>
+          <br>
+          St. Xavier's Collegiate School
+        </p>
+      </center>
+  </div>
   </div>
 
-  <div class="col-md-6 col-sm-10 mt-3 mx-4">
-    <div id="markdown-content" class="markdown-body">
-        <!-- Markdown content will be rendered here -->
-    </div>
-<script>
-    // Your Markdown content
-    const markdown = `
-# Sailik Sengupta
-
-
-Sailik (\`Sho-e-lik\`) is an Applied Scientist in the [Amazon AI Labs](https://www.amazon.science/) and a PhD from
-[Arizona State University](https://yochan-lab.github.io/home/), currently working on the robustness of NLP systems.
-He is generally interested in identifying failure points of cyber systems and ML models and proposing solutions that
-make these systems behave is a robust and reliable manner.
-
-### Education
-
-
-- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:20px;height:20px">
-**Ph.D.** (in Computer Science), _Arizona State University, 2015-2020_
-- <img src="./images/1200px-Jadavpur_University_Logo.png" alt="sailik image" style="width:20px;height:20px">
-**B.E.** (in Computer Science &amp; Engg.), _Jadavpur University, 2009-2013_
-- <img src="./images/sxcs-icon.png" alt="sailik image" style="width:20px;height:20px">
-**Alumnus**, _St. Xavier's Collegiate School, 1997-2009_
-
-### Experience
-
-- <span class="fa fa-amazon" style="color:#ff9900;"></span> **Applied Scientist**, _AWS AI Labs, Since 2020_
-- <span class="fa fa-amazon" style="color:#ff9900;"></span> **Applied Scientist Intern**, _Amazon Science, Summer 2018 & 2019_
-- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:15px;height:15px">
-**Guest Lecturer**, Combinatorial Algorithms and Intractability, _ASU, Spring, 2018_
-- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:15px;height:15px">
-**Teaching Assistant**, Introduction to Artificial Intelligence, _ASU, Fall 2016_
-- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:15px;height:15px">
-**Course Instructor**, Capstone, _ASU, Fall 2015_
-- <span class="fa fa-amazon" style="color:#ff9900;"></span> **Software Development Engineer**, _Amazon Payments, 2013-2015_
-
-### Research
-`;
-
-    // Convert Markdown to HTML using Showdown
-    const converter = new showdown.Converter();
-    const htmlContent = converter.makeHtml(markdown);
-
-    // Render the converted HTML
-    document.getElementById('markdown-content').innerHTML = htmlContent;
-</script>
+  <!-- <ul>
+    <li><p>Ph.D. in Computer Science, <strong>Arizona State University</strong> (Fall, 2020)</p>
+    </li>
+    <li><p>Bachelors in Computer Science and Engineering, <strong>Jadavpur University</strong>, Calcutta (2013)</p>
+    </li>
+    <li><p>Alumnus of <strong>St. Xavier's Collegiate School</strong>, Calcutta (2009)</p>
+    </li>
+  </ul> -->
   <br>
+
+  <h2 id="experience">
+    Experience
+    <small>
+      <button class="btn btn-sm btn-outline-light" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1">--verbose</button>
+    </small>
+  </h2>
+  <hr>
+  <ul>
+    <li><p><strong>Scientist</strong>, <span class="fa fa-amazon body-icon" style="color:#ff9900;"></span>WS AI Labs (2020-Present)</p>
+      <p class="collapse multi-collapse" id="collapse1">
+      Identifying failure modes of task-oriented dialogy systems and trying to ensure the automated chat agent doesn't force your to seek a human. Also, teaching <a href="https://aws.amazon.com/lex/">AWS Lex</a> to converse in multiple languages.
+      </p>
+    </li>
+    <br>
+    <li><p><strong>Intern Scientist</strong>, <span class="fa fa-amazon body-icon"
+                                                             style="color:#ff9900;"></span>mazon Science (Summer 2019)</p>
+      <p class="collapse multi-collapse" id="collapse1">
+        Improved constrained text-generataion using Supervised and Reinforcement Learning before ChatGPT made it sexy.
+      </p>
+    </li>
+    <br>
+    <li><p><strong>Intern Scientist</strong>, <span class="fa fa-amazon body-icon"
+                                                             style="color:#ff9900;"></span>mazon Science (Summer 2018)</p>
+      <p class="collapse multi-collapse" id="collapse1">
+        Develope effective training-data augmentation that improves few-shot performance of state-of-the-art (SOTA) text-classification models.
+      </p>
+    </li>
+    <br>
+    <li><p><strong>Software Development Engineer</strong>, <span class="fa fa-amazon body-icon"
+                                                                 style="color:#ff9900;"></span>mazon (2013-2015)</p>
+      <p class="collapse multi-collapse" id="collapse1">
+        Backend (Java), Frontend (NodeJS) and everything in between. A disciple of the <a href="http://www.mit.edu/~xela/tao.html">Tao of Programming</a> and
+        follower of <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code</a>ing practices. Was a software
+        engineer by day and a security certifier by night, ensuring Amazon's code was difficult (only fools say impossible) to hack.
+      </p>
+    </li>
+  </ul>
+  
+  <br>
+
+  <h2 id="research">Research</h2>
+  <hr>
+    <!-- <p class='text-muted'><small><em>Equal contribution by authors is denoted using the symbol * after their names.</em></small></p> -->
   <!-- 2023 -->
   <div class='row'>
     <div class="col-md-2">
@@ -187,7 +331,7 @@ make these systems behave is a robust and reliable manner.
         <p>
           <a href="https://arxiv.org/abs/2211.03966"><button type="button" class="btn btn-outline-info btn-sm">paper</button></a>
           <a href="./files/neurips2022_poster.pdf"><button type="button" class="btn btn-outline-info btn-sm">poster</button></a>
-
+		
         </p>
       <p style="font-size:large;"><strong>Imperfect ImaGANation: Implications of GANs Exacerbating Biases in Facial Data Augmentation and Snapchap Selfie Lenses</strong></p>
         <p><em>Niharika Jain*, Alberto Olmo*, Sailik Sengupta, Lydia Manikonda, Subbarao Kambhampati</em></p>
@@ -206,7 +350,7 @@ make these systems behave is a robust and reliable manner.
         </p>
     </div>
   </div>
-
+  
   <!-- 2021 -->
   <div class='row'>
     <div class="col-md-2">
@@ -324,7 +468,7 @@ make these systems behave is a robust and reliable manner.
       <p><em>Karthik Valmeekam, Sarath Sreedharan, Sailik Sengupta, Subbarao Kambhampati </em></p>
       <p>ICAPS Workshop on Explainable AI Planning (XAIP), 2020</p>
       <p>
-        <!--
+        <!-- 
         <button type="button"
                 class="btn btn-outline-warning btn-sm">coming soon...</button>
         </a> -->
@@ -542,6 +686,17 @@ make these systems behave is a robust and reliable manner.
                                                           class="btn btn-outline-info btn-sm">paper</button></a></p>
         </div>
       </div>
+
+    <h2 id="teaching">Teaching</h2>
+    <hr>
+    <ul>
+      <li><p><strong>Guest Lecturer</strong>, CSE 550 - Combinatorial Algorithms and Intractability, ASU (Spring, 2018)</p>
+      </li>
+      <li><p><strong>Teaching Assistant</strong>, CSE 471 - Introduction to Artificial Intelligence, ASU (Fall, 2016)</p>
+      </li>
+      <li><p><strong>Instructor</strong>, CSE 486 - Capstone, ASU (Fall, 2015)</p>
+      </li>
+    </ul>
     <br>
     <h2 id="awards-and-services">Awards and Services</h2>
     <hr>
@@ -575,8 +730,69 @@ make these systems behave is a robust and reliable manner.
       </li>
     </ul>
       <br>
+    <!--
+    <h2 id="projects-and-other-stuff">Projects and Other Stuff</h2>
+      <hr>
+      <ul>
+        <li><p>[Summer'19] Policy Gradient in Keras.
+          <a href="https://github.com/sailik1991/RL-lab"><button type="button"
+                                                                 class="btn btn-outline-info btn-sm">code</button></a></p>
+            </p>
+      </li>
+      <li><p>[Spring'18] A Bit-Flag based Integer Linear Program for finding the Minimum Identifying Code Set using 
+        <a href="https://github.com/sailik1991/mics"><button type="button"
+                                                             class="btn btn-outline-info btn-sm">code</button></a></p>
+          </p>
+    </li>
+    <li><p>[Spring'18] Optimal Robotic Surveillance using Bayesian Stackelberg Games.
+      <a href="https://github.com/AdityaPrasadMishra/CSE591-Multi-Robot-Surveilance"><button type="button"
+                                                                                             class="btn btn-outline-info btn-sm">code</button></a></p>
+        </p>
+  </li>
+  <li>
+    <p>[Spring'17] Knowledge Acquisition for Symbiotic Autonomy in Uncertain Environments using <a href="http://reasoning.eas.asu.edu/lpmln/Tutorial.html">LPMLN</a>.
+      <a href="http://www.public.asu.edu/~ssengu15/files/kkr_project_questions.pdf"><button type="button"
+                                                                                            class="btn btn-outline-info btn-sm">pdf</button></a> <a href="http://www.public.asu.edu/~ssengu15/files/bibs/robotquestions2017lpmln.bib"><button type="button"
+                                                                                                                                                                                                                                              class="btn btn-outline-info btn-sm">bibtex</button></a>
+    </p>
+  </li>
+  <li>
+    <p>[Spring'17] Integer Linear Program for a Constrained version of the Independed Set problem.
+      <a href="https://www.public.asu.edu/~ssengu15/files/max-independent-set.pdf"></a><a href="https://github.com/sailik1991/constrainedIndependentSet"><button type="button"
+                                                                                                                                                                 class="btn btn-outline-info btn-sm">code</button></a>
+    </p>
+  </li>
+  <li>
+    <p>[Fall'16] Orchestrating Team Meetings with AI-enabled Smart Assistants.
+      <a href="https://github.com/sailik1991/meetingToTranscript"><button type="button"
+                                                                          class="btn btn-outline-info btn-sm">code</button></a></p>
+    </li>
+    <li>
+      <p>[Fall'16] Scene Understanding with Deep Neural Networks - Identification of Missing or Occluded Objects in Images.
+        <a href="http://www.public.asu.edu/~ssengu15/files/identifying-occluded-objects.pdf"><button type="button"
+                                                                                                     class="btn btn-outline-info btn-sm">pdf</button></a></p>
+      </li>
+      <li>
+        <p>[Spring'16] Securing C-code against Size Aware Buffer Overflow Attacks. <a href="https://github.com/yugarsi/sabo"><button type="button"
+                                                                                                                                     class="btn btn-outline-info btn-sm">code</button></a></p>
+      </li>
+      <li>
+        <p>[Fall'15] Secure Java Library for Bcrypt, a Password Hashing Mechanism. <a href="https://github.com/sailik1991/bcrypt\"><button type="button"
+                                                                                                                                           class="btn btn-outline-info btn-sm">code</button></a></p>
+      </li>
+      <li>
+        <p>A fast <a href="http://www.gurobi.com/">Gurobi</a> installer <a href="https://github.com/sailik1991/utilities/tree/master/setupGurobi">script</a>.</p>
+      </li>
+      <li>
+        <p>His wedding story summed up in a <a href="./wedding_bells/">webpage</a>.</p>
+      </li>
+      <li>
+        <p>A website for practicing the <a href="./pomodoro.html">pomodoro</a> technique.</p>
+      </li>
+    </ul>
+    <br>
+    -->
   </div>
-
 </div>
 </div>
 <script>
