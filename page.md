@@ -6,8 +6,7 @@ Sailik (`Sho-e-lik`) is a Scientist in the [AWS AI Labs](https://www.amazon.scie
 He is generally interested in identifying failure points of cyber systems and ML models and proposing solutions that
 make these systems behave is a robust and reliable manner.
 
-### Education
-
+#### 🎓 Education
 
 - <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:20px;height:20px">
 **Ph.D.** (in Computer Science), _Arizona State University, 2015-2020_
@@ -16,27 +15,22 @@ make these systems behave is a robust and reliable manner.
 - <img src="./images/sxcs-icon.png" alt="sailik image" style="width:20px;height:20px">
 **Alumnus**, _St. Xavier's Collegiate School, 1997-2009_
 
-### Experience
+#### 🛠 Experience
 
-- <span class="fa fa-amazon" style="color:#ff9900;"></span> **Scientist**, _AWS AI Labs, 2021-Present_
-- <span class="fa fa-amazon" style="color:#ff9900;"></span> **Intern Scientist**, _Amazon Science, Summer 2018 & 2019_
-- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:15px;height:15px">
-**Guest Lecturer**, Combinatorial Algorithms and Intractability, _ASU, Spring 2018_
-- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:15px;height:15px">
-**Teaching Assistant**, Introduction to Artificial Intelligence, _ASU, Fall 2016_
-- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:15px;height:15px">
-**Course Instructor**, Capstone, _ASU, Fall 2015_
-- <span class="fa fa-amazon" style="color:#ff9900;"></span> **Software Development Engineer**, _Amazon Payments, 2013-2015_
+- **Scientist**, _AWS AI Labs, 2021-Present_
+- **PhD Fellow**, _IBM T. J. Watson Center, 2018-2020_
+- **Intern Scientist**, _Amazon Science, Summer 2018 & 2019_
+- **Lecturer/Teaching Assistant**, AI / Algo / Optimization, _ASU, 2015-2018_
+- **Software Development Engineer**, _Amazon Payments, 2013-2015_
 
-### Recognition
+#### 🏆 Recognition
 
 - **IBM Ph.D. Fellowship**, _IBM Research, 2018-2020_
 - **AI Breakthroughs**, _Microsoft Research, 2020_
 - **University Graduate Fellowship**, _ASU, 2016-2020_
-- **Engineering Graduate Fellowship**, _ASU, 2019_
 - **Outstanding Developer**, _Amazon, 2015_
 
-### Research
+#### ✍ Research
 
 - **Robustification of Multilingual Language Models to Real-world Noise with Robust Contrastive Pretraining**
 <br>
