@@ -63,7 +63,7 @@ AAMAS, 2023
 <br>
 _Soumajyoti Sarkar, Kaixiang Lin, Sailik Sengupta, Leonard Lausen, Sheng Zha, Saab Mansour_
 <br>
-Efficient Natural Language and Speech Processing, NeurIPS'22
+NeurIPS, 2022 (Efficient Natural Language and Speech Processing)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/abs/2211.03966)
 [<button type="button" class="btn btn-outline-primary btn-sm">poster</button>](./files/neurips2022_poster.pdf)
@@ -129,7 +129,7 @@ Ph.D. Thesis
 <br>
 _Sailik Sengupta, Subbarao Kambhampati_
 <br>
-NeurIPS Workshop on Real-World Reinforcement Learning (RWRL), 2020
+NeurIPS, 2020 (Real-World Reinforcement Learning)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](files/RWRL_2020.pdf) [<button type="button" class="btn btn-outline-primary btn-sm">poster</button>](files/poster_RWRL2020.pdf) [<button type="button" class="btn btn-outline-primary btn-sm">talk</button>](https://slideslive.com/38943287/learning-movement-policies-in-bayesian-stackelberg-markov-games-for-adaptive-moving-target-defense)
 
@@ -137,7 +137,7 @@ NeurIPS Workshop on Real-World Reinforcement Learning (RWRL), 2020
 <br>
 _Zahra Zahedi\*, Sailik Sengupta\*, Subbarao Kambhampati_
 <br>
-NeurIPS Workshop on Co-operative Aritificial Intelligence (Co-op AI), 2020
+NeurIPS, 2020 (Co-operative Aritificial Intelligence)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">arxiv</button>](https://arxiv.org/abs/2002.01640)
 
@@ -145,7 +145,7 @@ NeurIPS Workshop on Co-operative Aritificial Intelligence (Co-op AI), 2020
 <br>
 _Alberto Olmo\*, Sailik Sengupta\*, Subbarao Kambhampati_
 <br>
-ICML Workshop(s) on Uncertainty and Robustness in Deep Learning (UDL) and Human-In-the-Loop Learning (HILL), 2020
+ICML, 2020 (Uncertainty and Robustness in Deep Learning)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://yochan-lab.github.io/papers/files/papers/ICML_HILL_UDL_FailureModes.pdf) [<button type="button" class="btn btn-outline-primary btn-sm">poster</button>](./files/wlf_icml_ws.pdf)
 
@@ -169,7 +169,7 @@ IEEE Communications Surveys and Tutorials, 2020
 <br>
 _Sachin Grover, Sailik Sengupta, Tathagata Chakraborti, Subbarao Kambhampati_
 <br>
-HCI Journal on Unifying Human Computer Interaction and Artificial Intelligence, 2020 (Also presented at [ICAPS, 2020 Journal Track](https://icaps20.icaps-conference.org/paper322.html))
+HCI Journal, 2020 (Unifying Human Computer Interaction and Artificial Intelligence) (Also presented at [ICAPS, 2020 Journal Track](https://icaps20.icaps-conference.org/paper322.html))
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://www.tandfonline.com/doi/full/10.1080/07370024.2020.1726751)
 
@@ -177,7 +177,7 @@ HCI Journal on Unifying Human Computer Interaction and Artificial Intelligence, 
 <br>
 _Karthik Valmeekam, Sarath Sreedharan, Sailik Sengupta, Subbarao Kambhampati_
 <br>
-ICAPS Workshop on Explainable AI Planning (XAIP), 2020
+ICAPS, 2020 (Explainable AI Planning)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/pdf/2011.09644.pdf)
 
@@ -185,7 +185,7 @@ ICAPS Workshop on Explainable AI Planning (XAIP), 2020
 <br>
 _Sowmya Myneni\*, Ankur Chowdhary\*, Abdulhakim Sabur, Sailik Sengupta, Garima Agrawal, Dijiang Huang, Myong Kang_
 <br>
-ML-Hat, 2020 (co-located with KDD-2020)
+KDD, 2020 (ML-Hat)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](./files/DAPT_at_MLHat2020.pdf) [<button type="button" class="btn btn-outline-primary btn-sm">data</button>](https://gitlab.com/asu22/dapt2020) [<button type="button" class="btn btn-outline-primary btn-sm">talk</button>](https://www.youtube.com/watch?v=cDlFtQrOLdQ&list=PLEymUM7oXfTSYcAymStpVPyWuHB2FUDKv&index=1)
 
@@ -201,7 +201,7 @@ GameSec, 2019
 <br>
 _Sailik Sengupta, Tathagata Chakraborti, Subbarao Kambhampati_
 <br>
-GameSec, 2019 (A preliminary version was presented at a AAAI-18 Workshop on Enginnering Secure and Dependable ML Systems)
+GameSec, 2019
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/pdf/1705.07213) [<button type="button" class="btn btn-outline-primary btn-sm">slides</button>](./files/mtdeep_gamesec19_ppt.pdf) [<button type="button" class="btn btn-outline-primary btn-sm">poster</button>](./files/MTDeep-poster.pdf)
 
@@ -218,7 +218,7 @@ WeCNLP, 2019
 <br>
 _Ankur Chowdhary\*, Sailik Sengupta\*, Dijiang Huang, Subbarao Kambhampati_
 <br>
-AAAI'19 Workshop on Artificial Intelligence for Cyber Security (AICS) (Preliminary version accepted to ICNC, 2019)
+AAAI, 2019 (Artificial Intelligence for Cyber Security); ICNC, 2019
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/abs/1812.09660) [<button type="button" class="btn btn-outline-primary btn-sm">slides</button>](https://www.dropbox.com/s/4j67062t5ngb9n8/aics.pptx?dl=0) [<button type="button" class="btn btn-outline-primary btn-sm">code</button>](https://github.com/sailik1991/MarkovGameSolvers)
 [<button type="button" class="btn btn-warning btn-sm">Featured (Twitter)</button>](https://twitter.com/arXiv_Daily/status/1079017322973671424)
@@ -227,7 +227,7 @@ AAAI'19 Workshop on Artificial Intelligence for Cyber Security (AICS) (Prelimina
 <br>
 _Sailik Sengupta\*, Zahra Zahedi\*, Subbarao Kambhampati_
 <br>
-21st International Workshop on Trust in Agent Societies (co-located with AAMAS, 2019)
+AAMAS, 2019 (Trust in Agent Societies)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/abs/1903.00111) [<button type="button" class="btn btn-outline-primary btn-sm">talk</button>](https://www.youtube.com/watch?v=dMD4LdwowDw)
 
@@ -259,7 +259,7 @@ GameSec, 2018
 <br>
 _Sailik Sengupta, Tathagata Chakraborti, Subbarao Kambhampati_
 <br>
-AAAI'18 Workshop on Engineering Dependable and Secure Machine Learning Systems
+AAAI, 2018 (Engineering Dependable and Secure Machine Learning Systems)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/abs/1705.07213) [<button type="button" class="btn btn-outline-primary btn-sm">slides</button>](./files/mtdnn.pdf)
 
@@ -267,7 +267,7 @@ AAAI'18 Workshop on Engineering Dependable and Secure Machine Learning Systems
 <br>
 _Sailik Sengupta, Andrew Dudley, Tathagata Chakraborti, Subbarao Kambhampati_
 <br>
-AAAI'18 Workshop on Engineering Dependable and Secure Machine Learning Systems
+AAAI, 2018 (Engineering Dependable and Secure Machine Learning Systems)
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](./files/aaai_wlf_bounded_misclassification.pdf) [<button type="button" class="btn btn-outline-primary btn-sm">slides</button>](./files/bounded_misclassification.pdf)
 
@@ -275,7 +275,7 @@ AAAI'18 Workshop on Engineering Dependable and Secure Machine Learning Systems
 <br>
 _Tathagata Chakraborti\*, Sailik Sengupta\*, Subbarao Kambhampati_
 <br>
-ICAPS, 2018 System Demo (Also to be presented at the UISP Workshop @ ICAPS, 2018)
+ICAPS, 2018 System Demo
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://yochan-lab.github.io/papers/files/papers/ma-radar.pdf)
 
@@ -283,14 +283,14 @@ ICAPS, 2018 System Demo (Also to be presented at the UISP Workshop @ ICAPS, 2018
 <br>
 _Sailik Sengupta, Rashmi Gangadharaiah, Ajay Mishra, Mona Diab_
 <br>
-WeCNLP Summit, 2018 (Retracted)
+WeCNLP, 2018 (Retracted)
 
 - **RADAR - A Proactive Decision Support System for Human-in-the-Loop Planning**
 <br>
 _Sailik Sengupta, Tathagata Chakraborti, Sarath Sreedharan, Satya Gautam Vadlamudi, Subbarao Kambhampati_
 <br>
-AAAI Fall Symposium on Human-Agent Groups, 2017,
-ICAPS, 2017 System Demo (Was also presented at the UISP Workshop @ ICAPS, 2017)
+AAAI Fall Symposium, 2017;
+ICAPS, 2017 System Demo
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://aaai.org/ocs/index.php/FSS/FSS17/paper/view/16028) [<button type="button" class="btn btn-outline-primary btn-sm">slides</button>](https://www.dropbox.com/s/k5mxrv8dk0niepu/UISP_final.pptx?dl=0) [<button type="button" class="btn btn-outline-primary btn-sm">demo</button>](https://www.youtube.com/watch?v=x5lYDnSh3B8)
 
@@ -298,7 +298,7 @@ ICAPS, 2017 System Demo (Was also presented at the UISP Workshop @ ICAPS, 2017)
 <br>
 _Sailik Sengupta, Satya Gautam Vadlamudi, Subbarao Kambhampati, Adam Doupé, Ziming Zhao, Marthony Taguinod, Gail-Joon Ahn_
 <br>
-AAMAS, 2017 (Also presented at ADVERSE workshop @ AAMAS, 2017)
+AAMAS, 2017
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](http://rakaposhi.eas.asu.edu/AAMAS-2017-MTD.pdf) [<button type="button" class="btn btn-outline-primary btn-sm">slides</button>](https://www.dropbox.com/s/rcn32127584np6e/AAMAS-Session1D.pdf?dl=0) [<button type="button" class="btn btn-outline-primary btn-sm">talk</button>](https://www.youtube.com/watch?v=03rydUG2lBU)
 [<button type="button" class="btn btn-warning btn-sm">Featured (What's Hot @ AAMAS)</button>](https://www.cse.wustl.edu/~sanmay/papers/whatshot-aamas-final.pdf)
