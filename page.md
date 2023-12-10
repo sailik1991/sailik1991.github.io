@@ -32,6 +32,15 @@ make these systems behave is a robust and reliable manner.
 
 #### ✍ Research
 
+- **'Why didn't you allocate this task to them?' Negotiation-Aware Explicable Task Allocation and Contrastive Explanation Generation**
+<br>
+_Zahra Zahedi, Sailik Sengupta, Subbarao Kambhampati_
+<br>
+AAAI, 2024
+<br>
+<button type="button" class="btn btn-outline-secondary btn-sm">coming soon</button>
+[<button type="button" class="btn btn-outline-primary btn-sm">arxiv</button>](https://arxiv.org/abs/2002.01640)
+
 - **Robustification of Multilingual Language Models to Real-world Noise with Robust Contrastive Pretraining**
 <br>
 _Asa Cooper Stickland\*, Sailik Sengupta\*, Jason Krone, Saab Mansour, He He_
@@ -55,9 +64,9 @@ EMNLP, 2023
 <br>
 _Zahra Zahedi, Sailik Sengupta, Subbarao Kambhampati_
 <br>
-AAMAS, 2023
+AAMAS, 2023 (Extended Abstract)
 <br>
-[<button type="button" class="btn btn-outline-primary btn-sm">arxiv</button>](https://arxiv.org/abs/2002.01640)
+[<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://dl.acm.org/doi/abs/10.5555/3545946.3598911)
 
 - **Parameter and Data Efficient Continual Pre-training for Robustness to Dialectal Variance in Arabic**
 <br>
