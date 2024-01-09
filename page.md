@@ -2,7 +2,7 @@
 
 
 Sailik (`Sho-e-lik`) is a Senior Scientist in the [AWS AI Labs](https://www.amazon.science/) and a PhD from
-[Arizona State University](https://yochan-lab.github.io/home/), currently working on the robustness and alignment of NLP systems.
+[Arizona State University](https://yochan-lab.github.io/home/) and currently works on the robustness and alignment of NLP systems.
 He is generally interested in identifying failure points of cyber systems and ML models and proposing solutions that
 make these systems behave is a robust and reliable manner.
 
