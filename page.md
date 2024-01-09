@@ -1,7 +1,7 @@
 # Sailik Sengupta
 
 
-Sailik (`Sho-e-lik`) is a Scientist in the [AWS AI Labs](https://www.amazon.science/) and a PhD from
+Sailik (`Sho-e-lik`) is a Senior Scientist in the [AWS AI Labs](https://www.amazon.science/) and a PhD from
 [Arizona State University](https://yochan-lab.github.io/home/), currently working on the robustness and alignment of NLP systems.
 He is generally interested in identifying failure points of cyber systems and ML models and proposing solutions that
 make these systems behave is a robust and reliable manner.
@@ -17,8 +17,8 @@ make these systems behave is a robust and reliable manner.
 
 #### 🛠 Experience
 
-- **Scientist**, _AWS AI Labs, 2021-Present_
-- **PhD Fellow**, _IBM T. J. Watson Center, 2018-2020_
+- **Senior Scientist**, _AWS AI Labs, 2021-Present_
+- **IBM PhD Fellow**, _IBM T. J. Watson Center, 2018-2020_
 - **Intern Scientist**, _Amazon Science, Summer 2018 & 2019_
 - **Lecturer/Teaching Assistant**, AI / Algo / Optimization, _ASU, 2015-2018_
 - **Software Development Engineer**, _Amazon Payments, 2013-2015_
@@ -60,7 +60,7 @@ EMNLP, 2023
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/abs/2305.15338)
 
-- **'Why didn't you allocate this task to them?' Negotiation-Aware Explicable Task Allocation and Contrastive Explanation Generation**
+- **Negotiation-Aware Explicable Task Allocation and Contrastive Explanation Generation**
 <br>
 _Zahra Zahedi, Sailik Sengupta, Subbarao Kambhampati_
 <br>
