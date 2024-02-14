@@ -48,8 +48,8 @@ _Zahra Zahedi, Sailik Sengupta, Subbarao Kambhampati_
 <br>
 AAAI, 2024
 <br>
-[<button type="button" class="btn btn-outline-secondary btn-sm">paper</button>](./files/AITA_AAAI_24.pdf)
-[<button type="button" class="btn btn-outline-secondary btn-sm">poster</button>](./files/aita_aaai_24_poster.pdf)
+[<button type="button" class="btn btn btn-outline-primary btn-sm">paper</button>](./files/AITA_AAAI_24.pdf)
+[<button type="button" class="btn btn btn-outline-primary btn-sm">poster</button>](./files/aita_aaai_24_poster.pdf)
 
 - **Robustification of Multilingual Language Models to Real-world Noise with Robust Contrastive Pretraining**
 <br>
