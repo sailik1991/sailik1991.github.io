@@ -32,14 +32,24 @@ make these systems behave is a robust and reliable manner.
 
 #### ✍ Research
 
+[//]: # (- **DeAL: Decoding-time Alignment for Large Language Models**)
+
+[//]: # (<br>)
+
+[//]: # (_James Y. Huang, Sailik Sengupta, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, Nikolaos Pappas, Saab Mansour, Katrin Kirchoff, Dan Roth_)
+
+[//]: # (<br>)
+
+[//]: # ([<button type="button" class="btn btn-outline-secondary btn-sm">pre-print</button>]&#40;https://arxiv.org/abs/2402.06147&#41;)
+
 - **'Why didn't you allocate this task to them?' Negotiation-Aware Explicable Task Allocation and Contrastive Explanation Generation**
 <br>
 _Zahra Zahedi, Sailik Sengupta, Subbarao Kambhampati_
 <br>
 AAAI, 2024
 <br>
-<button type="button" class="btn btn-outline-secondary btn-sm">coming soon</button>
-[<button type="button" class="btn btn-outline-primary btn-sm">arxiv</button>](https://arxiv.org/abs/2002.01640)
+[<button type="button" class="btn btn-outline-secondary btn-sm">paper</button>](./files/AITA_AAAI_24.pdf)
+[<button type="button" class="btn btn-outline-secondary btn-sm">poster</button>](./files/aita_aaai_24_poster.pdf)
 
 - **Robustification of Multilingual Language Models to Real-world Noise with Robust Contrastive Pretraining**
 <br>
