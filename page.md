@@ -34,7 +34,7 @@ make these systems behave is a robust and reliable manner.
 
 - **DeAL: Decoding-time Alignment for Large Language Models**
 <br>
-_James Y. Huang*, Sailik Sengupta*, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, Nikolaos Pappas, Saab Mansour, Katrin Kirchoff, Dan Roth_
+_James Y. Huang*, Sailik Sengupta*, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, Nikolaos Pappas, Saab Mansour, Katrin Kirchhoff, Dan Roth_
 <br>
 [<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/abs/2402.06147)
 
