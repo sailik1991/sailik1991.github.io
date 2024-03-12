@@ -32,15 +32,23 @@ make these systems behave is a robust and reliable manner.
 
 #### ✍ Research
 
-[//]: # (- **DeAL: Decoding-time Alignment for Large Language Models**)
+- **DeAL: Decoding-time Alignment for Large Language Models**
+<br>
+_James Y. Huang*, Sailik Sengupta*, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, Nikolaos Pappas, Saab Mansour, Katrin Kirchoff, Dan Roth_
+<br>
+[<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/abs/2402.06147)
 
-[//]: # (<br>)
+- **FLAP: Flow Adhering Planning with Constrained Decoding in LLMs**
+<br>
+_Shamik Roy, Sailik Sengupta, Daniele Bonadiman, Saab Mansour, Arshit Gupta_
+<br>
+[<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/pdf/2403.05766.pdf)
 
-[//]: # (_James Y. Huang, Sailik Sengupta, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, Nikolaos Pappas, Saab Mansour, Katrin Kirchoff, Dan Roth_)
-
-[//]: # (<br>)
-
-[//]: # ([<button type="button" class="btn btn-outline-secondary btn-sm">pre-print</button>]&#40;https://arxiv.org/abs/2402.06147&#41;)
+- **Can Your Model Tell a Negation from an Implicature? Unravelling Challenges With Intent Encoders**
+<br>
+_Yuwei Zhang, Siffi Singh, Sailik Sengupta, Igor Shalyminov, Hang Su, Hwanjun Song, Saab Mansour_
+<br>
+[<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/pdf/2403.04314.pdf)
 
 - **'Why didn't you allocate this task to them?' Negotiation-Aware Explicable Task Allocation and Contrastive Explanation Generation**
 <br>
