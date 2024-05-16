@@ -42,7 +42,9 @@ _James Y. Huang*, Sailik Sengupta*, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, 
 <br>
 _Yuwei Zhang, Siffi Singh, Sailik Sengupta, Igor Shalyminov, Hang Su, Hwanjun Song, Saab Mansour_
 <br>
-[<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/pdf/2403.04314.pdf)
+ACL, 2024
+<br>
+[<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/pdf/2403.04314.pdf)
 
 - **FLAP: Flow-Adhering Planning with Constrained Decoding in LLMs**
 <br>
