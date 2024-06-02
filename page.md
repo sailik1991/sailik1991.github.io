@@ -17,7 +17,7 @@ make these systems behave is a robust and reliable manner.
 
 #### 🛠 Experience
 
-- **Senior Scientist**, _AWS AI Labs, 2021-Present_
+- **Senior Scientist**, _AWS AI Labs, 2020-Present_
 - **IBM PhD Fellow**, _IBM T. J. Watson Center, 2018-2020_
 - **Intern Scientist**, _Amazon Science, Summer 2018 & 2019_
 - **Lecturer/Teaching Assistant**, AI / Algo / Optimization, _ASU, 2015-2018_
