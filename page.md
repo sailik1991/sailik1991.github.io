@@ -1,12 +1,12 @@
 # Sailik Sengupta
 
-Sailik (`Sho-e-lik`) is a Senior Scientist at [AWS AI Labs](https://www.amazon.science/) and has a knack for identifying shortcomings of a system, and then figuring out a way to improve them. True to this philosophy, he is currently interested in on understanding (and improving 🤞) function-calling prowess, planning capabilities, multi-objective alignment, personalization, and agency of Large auto-regressive models (aka LLMs).
+Sailik (`Sho-e-lik`) is a Senior Scientist at [AWS AI Labs](https://www.amazon.science/) and has a knack for identifying shortcomings of a system, and then figuring out ways to improve it. True to this philosophy, he is currently interested in understanding (and improving 🤞) function-calling prowess, planning capabilities, multi-objective alignment, personalization, and agency of Large auto-regressive models (aka LLMs).
 
 He graduated from [Arizona State University](https://yochan-lab.github.io/home/), where he was busy identifying failure points in cyber (web/network/cloud), machine learning (vision/GANs), and physical (power-grid) systems. To graduate, he proposed dynamic defenses that (thankfully 😅) improved the robustness and reliability of these systems.
 
 Given his eavesdropping habits and multipotentialite nature, he can often be found wasting others' time talking about decision support systems, explanation generation, negotiation, decoding, and trust in AI systems.
 
-> 🪁 He will be at [ACL](https://www.amazon.science/conferences-and-events/acl-2024) from 11th - 17th Aug, 2024!
+> 🪁 _He will be at [ACL](https://www.amazon.science/conferences-and-events/acl-2024) from 11th - 17th Aug, 2024!_
 
 #### 🎓 Education
 
