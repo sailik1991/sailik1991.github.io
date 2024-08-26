@@ -6,8 +6,6 @@ He graduated from [Arizona State University](https://yochan-lab.github.io/home/)
 
 Given his eavesdropping habits and multipotentialite nature, he can often be found wasting others' time talking about decision support systems, explanation generation, negotiation, decoding, and trust in AI systems.
 
-> 🪁 _He will be at [ACL](https://www.amazon.science/conferences-and-events/acl-2024) from 11th - 17th Aug, 2024!_
-
 #### 🎓 Education
 
 - <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:20px;height:20px">
@@ -46,7 +44,8 @@ _Yuwei Zhang, Siffi Singh, Sailik Sengupta, Igor Shalyminov, Hang Su, Hwanjun So
 <br>
 ACL, 2024
 <br>
-[<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://arxiv.org/pdf/2403.04314.pdf)
+[<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://aclanthology.org/2024.acl-long.33/)
+[<button type="button" class="btn btn-outline-primary btn-sm">poster</button>](./files/acl_2024_poster.pdf)
 
 - **FLAP: Flow-Adhering Planning with Constrained Decoding in LLMs**
 <br>
