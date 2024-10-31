@@ -32,11 +32,18 @@ Given his eavesdropping habits and multipotentialite nature, he can often be fou
 
 #### ✍ Research
 
+- **SeRA: Self-Reviewing and Alignment of Large Language Models using Implicit Reward Margins**
+<br>
+_Jongwoo Ko, Saket Dingliwal, Bhavana Ganesh, Sailik Sengupta, Sravan Bodapati, Aram Galstyan_
+<br>
+[<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/abs/2410.09362)
+
 - **DeAL: Decoding-time Alignment for Large Language Models**
 <br>
 _James Y. Huang*, Sailik Sengupta*, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, Nikolaos Pappas, Saab Mansour, Katrin Kirchhoff, Dan Roth_
 <br>
 [<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/abs/2402.06147)
+[<button type="button" class="btn btn-warning btn-sm">Featured (Twitter)</button>](https://x.com/_akhaliq/status/1756874618135085261)
 
 - **Can Your Model Tell a Negation from an Implicature? Unravelling Challenges With Intent Encoders**
 <br>
