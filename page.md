@@ -1,10 +1,8 @@
 # Sailik Sengupta
 
-Sailik (`Sho-e-lik`) is a Senior Scientist at [AWS AI Labs](https://www.amazon.science/) and has a knack for identifying shortcomings of a system, and then figuring out ways to improve it. True to this philosophy, he is currently interested in understanding (and improving 🤞) function-calling prowess, planning capabilities, multi-objective alignment, personalization, and agency of Large auto-regressive models (aka LLMs).
+Sailik (`Sho-e-lik`) is a Senior Scientist at [AWS AI Labs](https://www.amazon.science/) and has a knack for identifying shortcomings of a system, and then figuring out ways to improve it. He is currently interested in understanding (and improving 🤞) function-calling prowess, planning capabilities, multi-objective alignment, personalization, and agency of Large auto-regressive models (aka LLMs).
 
-He graduated from [Arizona State University](https://yochan-lab.github.io/home/), where he was busy identifying failure points in cyber (web/network/cloud), machine learning (vision/GANs), and physical (power-grid) systems. To graduate, he proposed dynamic defenses that (thankfully 😅) improved the robustness and reliability of these systems.
-
-Given his eavesdropping habits and multipotentialite nature, he can often be found wasting others' time talking about decision support systems, explanation generation, negotiation, decoding, and trust in AI systems.
+During his doctoral studies at [Arizona State University](https://yochan-lab.github.io/home/), he was busy improving automated cyber defenses, identifying limitations of machine learning models, and building decision support systems for human-in-the-loop planning. Given his multi-potentialite nature and eavesdropping habits, he can often be found wasting time talking about decision support systems, explanations, negotiation, decoding, and trust in AI systems.
 
 #### 🎓 Education
 
@@ -32,6 +30,12 @@ Given his eavesdropping habits and multipotentialite nature, he can often be fou
 
 #### ✍ Research
 
+- **Multi-Objective Alignment of Large Language Models Through Hypervolume Maximization**
+<br>
+_Subhojyoti Mukherjee, Anusha Lalitha, Sailik Sengupta, Aniket Deshmukh, Branislav Kveton_
+<br>
+[<button type="button" class="btn btn-outline-secondary btn-sm">arxiv</button>](https://arxiv.org/abs/2412.05469)
+
 - **SeRA: Self-Reviewing and Alignment of Large Language Models using Implicit Reward Margins**
 <br>
 _Jongwoo Ko, Saket Dingliwal, Bhavana Ganesh, Sailik Sengupta, Sravan Bodapati, Aram Galstyan_
@@ -53,6 +57,12 @@ ACL, 2024
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">paper</button>](https://aclanthology.org/2024.acl-long.33/)
 [<button type="button" class="btn btn-outline-primary btn-sm">poster</button>](./files/acl_2024_poster.pdf)
+
+- **A Game-Theoretic Model of Trust in Human–Robot Teaming: Guiding Human Observation Strategy for Monitoring Robot Behavior**
+<br>
+_Zahra Zahedi, Sailik Sengupta, Subbarao Kambhampati_
+<br>
+IEEE Transactions on Human-Machine Systems, 2024
 
 - **FLAP: Flow-Adhering Planning with Constrained Decoding in LLMs**
 <br>
