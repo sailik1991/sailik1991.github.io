@@ -4,39 +4,20 @@ Sailik (pronounced "Sho-e-lik") is a Senior Scientist at [AWS AI Labs](https://w
 
 His journey began at [Jadavpur Univeristy](https://jadavpuruniversity.in/), where he graduated third in his class in 2013. He then joined Amazon as a developer, contributing to the successful launch of [Amazon Pay](https://pay.amazon.com) during his tenure from 2013 to 2015. Following this industry experience, he pursued his Ph.D. at [Arizona State University](https://yochan-lab.github.io/home/) under [Dr. Subbarao Kambhampati](https://rakaposhi.eas.asu.edu/), specializing in automated cyber defenses and decision support systems. His doctoral research earned him the prestigious IBM Ph.D. Fellowship from 2018 to 2020.
 
-[//]: # (#### 🎓 Education)
-
-[//]: # (- <img src="./images/270px-Arizona_State_University_seal.png" alt="sailik image" style="width:20px;height:20px">)
-
-[//]: # (**Ph.D.** &#40;in Computer Science&#41;, _Arizona State University, 2015-2020_)
-
-[//]: # (- <img src="./images/1200px-Jadavpur_University_Logo.png" alt="sailik image" style="width:20px;height:20px">)
-
-[//]: # (**B.E.** &#40;in Computer Science &amp; Engg.&#41;, _Jadavpur University, 2009-2013_)
-
-[//]: # (- <img src="./images/sxcs-icon.png" alt="sailik image" style="width:20px;height:20px">)
-
-[//]: # (**Alumnus**, _St. Xavier's Collegiate School, 1997-2009_)
-
-[//]: # (#### 🛠 Experience)
-
-
-[//]: # (- **Senior Scientist**, _AWS AI Labs, 2021-Present_)
-
-[//]: # (- **IBM PhD Fellow**, _IBM T. J. Watson Center, 2018-2020_)
-
-[//]: # (- **Intern Scientist**, _Amazon Science, Summer 2018 & 2019_)
-
-[//]: # (- **Lecturer/Teaching Assistant**, AI / Algo / Optimization, _ASU, 2015-2018_)
-
-[//]: # (- **Software Development Engineer**, _Amazon Payments, 2013-2015_)
-
 #### 🏆 Recognition
 
 - **IBM Ph.D. Fellowship**, _IBM Research, 2018-2020_
 - **AI Breakthroughs**, _Microsoft Research, 2020_
 - **University Graduate Fellowship**, _ASU, 2016-2020_
 - **Outstanding Developer**, _Amazon, 2015_
+- **Indian National Olympiad (INO)**, _IAPT, 2009_
+
+#### 💬 Invited Talks
+- **Autoregressive Search: Perspectives for LLM Decoding and Alignment**
+<br>
+_at_ Meta, Scale AI
+<br>
+[<button type="button" class="btn btn-outline-primary btn-sm">📈 slides</button>](https://docs.google.com/presentation/d/1p4VFDxLioZLdMVWls5YH9KtQv0xhUHOD6IKEctMwfF8/edit?usp=drive_link)
 
 #### ✍ Research
 
