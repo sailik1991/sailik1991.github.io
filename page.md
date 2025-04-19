@@ -10,7 +10,7 @@ His journey began at [Jadavpur Univeristy](https://jadavpuruniversity.in/), wher
 - **AI Breakthroughs**, _Microsoft Research, 2020_
 - **University Graduate Fellowship**, _ASU, 2016-2020_
 - **Outstanding Developer**, _Amazon, 2015_
-- **Indian National Olympiad (INO)**, _IAPT, 2009_
+- **Indian National Olympiad (INO)**, _IAPT, 2008_
 
 #### 💬 Invited Talks
 - **Autoregressive Search: Perspectives for LLM Decoding and Alignment**
@@ -18,6 +18,12 @@ His journey began at [Jadavpur Univeristy](https://jadavpuruniversity.in/), wher
 _at_ Meta, Scale AI
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm">📈 slides</button>](https://docs.google.com/presentation/d/1p4VFDxLioZLdMVWls5YH9KtQv0xhUHOD6IKEctMwfF8/edit?usp=drive_link)
+
+- **[TK-8th School Career Day] What does an AI Scientist do?**
+<br>
+Ida Jew Academy and Valle Vista Elementary (IJAVVE), CA, USA
+<br>
+[<button type="button" class="btn btn-outline-primary btn-sm">📈 slides</button>](https://docs.google.com/presentation/d/1jIG5vXS4AHouCUVtgHmU1dBbGVRXcy8AbPFcPDb6dkc/edit?usp=sharing)
 
 #### ✍ Research
 
