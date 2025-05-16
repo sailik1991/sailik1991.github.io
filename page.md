@@ -45,7 +45,7 @@ _James Y. Huang*, Sailik Sengupta*, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, 
 <br>
 ACL, 2025
 <br>
-[<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper (arxiv version)</button>](https://arxiv.org/abs/2402.06147)
+[<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper</button>](https://arxiv.org/abs/2402.06147)
 [<button type="button" class="btn btn-warning btn-sm">Featured (Twitter)</button>](https://x.com/_akhaliq/status/1756874618135085261)
 
 - **SeRA: Self-Reviewing and Alignment of Large Language Models using Implicit Reward Margins**
@@ -54,7 +54,17 @@ _Jongwoo Ko, Saket Dingliwal, Bhavana Ganesh, Sailik Sengupta, Sravan Bodapati, 
 <br>
 ICLR, 2025
 <br>
-[<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper (arxiv version)</button>](https://arxiv.org/abs/2410.09362)
+[<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper</button>](https://arxiv.org/abs/2410.09362)
+[<button type="button" class="btn btn-warning btn-sm">Amazon Science Blog</button>](https://www.amazon.science/blog/a-better-training-method-for-reinforcement-learning-with-human-feedback)
+
+- **FLAP: Flow-Adhering Planning with Constrained Decoding in LLMs**
+<br>
+_Shamik Roy, Sailik Sengupta, Daniele Bonadiman, Saab Mansour, Arshit Gupta_
+<br>
+NAACL, 2024
+<br>
+[<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper</button>](https://aclanthology.org/2024.naacl-long.29/)
+[<button type="button" class="btn btn-warning btn-sm">Amazon Science Blog</button>](https://www.amazon.science/blog/enabling-llms-to-make-the-right-api-calls-in-the-right-order)
 
 - **Can Your Model Tell a Negation from an Implicature? Unravelling Challenges With Intent Encoders**
 <br>
@@ -64,14 +74,6 @@ ACL, 2024
 <br>
 [<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper</button>](https://aclanthology.org/2024.acl-long.33/)
 [<button type="button" class="btn btn-outline-primary btn-sm">🪧 poster</button>](./files/acl_2024_poster.pdf)
-
-- **FLAP: Flow-Adhering Planning with Constrained Decoding in LLMs**
-<br>
-_Shamik Roy, Sailik Sengupta, Daniele Bonadiman, Saab Mansour, Arshit Gupta_
-<br>
-NAACL, 2024
-<br>
-[<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper</button>](https://arxiv.org/pdf/2403.05766.pdf)
 
 - **A Game-Theoretic Model of Trust in Human–Robot Teaming: Guiding Human Observation Strategy for Monitoring Robot Behavior**
 <br>
