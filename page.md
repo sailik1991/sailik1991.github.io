@@ -43,7 +43,9 @@ _Pha Nguyen, Sailik Sengupta, Girik Malik, Arshit Gupta, Bonan Min_
 <br>
 _James Y. Huang*, Sailik Sengupta*, Daniele Bonadiman, Yi-an Lai, Arshit Gupta, Nikolaos Pappas, Saab Mansour, Katrin Kirchhoff, Dan Roth_
 <br>
-[<button type="button" class="btn btn-outline-secondary btn-sm">🚧 arxiv</button>](https://arxiv.org/abs/2402.06147)
+ACL, 2025
+<br>
+[<button type="button" class="btn btn-outline-primary btn-sm"> 📄 paper (arxiv version)</button>](https://arxiv.org/abs/2402.06147)
 [<button type="button" class="btn btn-warning btn-sm">Featured (Twitter)</button>](https://x.com/_akhaliq/status/1756874618135085261)
 
 - **SeRA: Self-Reviewing and Alignment of Large Language Models using Implicit Reward Margins**
