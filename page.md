@@ -11,6 +11,7 @@ His journey began at [Jadavpur Univeristy](https://jadavpuruniversity.in/), wher
 - **University Graduate Fellowship**, _ASU, 2016-2020_
 - **Outstanding Developer**, _Amazon, 2015_
 - **Indian National Olympiad (INO)**, _IAPT, 2008_
+- **15 Patents** _(3 granted, ~12 pending)_
 
 #### 💬 Invited Talks
 - **Autoregressive Search: Perspectives for LLM Decoding and Alignment**
